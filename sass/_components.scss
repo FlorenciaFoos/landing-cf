@@ -1,3 +1,102 @@
 //reusables
+.header {
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__logo {
+        width: 21.2rem;
+        height: 3.4rem;
+        margin: 3rem 0 1rem 0;
+    }
+    &__heading {
+        text-transform: uppercase;
+        &--main {
+            display: block;
+            font-size: 2.25rem;
+            font-weight: $font-width-regular;
+            text-align: center;
+            color: rgba( $color-white, 0.75)
+        }
+        &--sub {
+            display: block;
+            font-size: 4.5rem;
+            font-weight: $font-width-bold;
+            color: $color-white;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: -86%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #FF6B6B;
+        z-index: -1;
+    }
+}
 
- 
+.main {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 116.5rem 91.25rem; //2 rows DETAILS TEAM
+}
+
+.details {
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__heading {
+        font-size: 3rem;
+        text-align: center;
+        font-weight: $font-width-regular;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+        &--bold {
+            font-weight: $font-width-bold;
+            &::before {
+                content: "";
+                background: #FF6B6B;
+                transform: rotate( -4deg) translateY(30px);
+                z-index: -1;
+                position: absolute;
+                width: 23.75rem;
+                height: 0.9rem;
+            }
+        }
+    }
+    &__features {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: $font-width-bold;
+    gap: 2.5rem;
+    &__icon {
+        width: 6.25rem;
+        height: 6.25rem;
+        &--size {
+            width: 8.25rem;
+            height: 6.25rem;
+        }
+    }
+    &__title {
+        font-size: 1.75rem;
+    }
+    &__text {
+        font-size: 1.12rem;
+        text-align: center;
+    }
+}
+
+.team {
+    grid-row: 2 / 3;
+}
