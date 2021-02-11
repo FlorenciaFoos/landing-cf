@@ -1,0 +1,21 @@
+// container y sistema de grilla 
+
+
+// body {
+//     font-family:$font-main-text;
+//     font-weight: 400;
+//     line-height: 1.7;
+//     color: $color-primary;
+// }
+
+
+.container {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr); //4 rows HEADER MAIN(section x 3)
+      grid-template-columns:  1fr;
+    
+  }
+
+
+
+  
