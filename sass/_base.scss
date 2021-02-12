@@ -1,44 +1,55 @@
 //resets, variables, mixins, utility classes
-
-
 //colors
 $color-primary:#E5E5E5;
-
 $color-secondary: #FF6B6B;
 $color-grey: #F5F5F5;
-
+$color-blue-details: #5D63F6;
 $color-white:#fff;
 $color-black: #000;
 $color-small-circle: #FFA8A8;
 $color-medium-circle: #FFC9C9;
 $color-big-circle: #FFE3E3;
-
- 
 //fonts
- 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-$font-family-text:'Open Sans', sans-serif;
+$font-family-text:'Open Sans',
+sans-serif;
 $font-width-regular: 400;
 $font-width-bold: 700;
-
-
+//aplica a todo
 *,
 *::before,
 *::after {
     margin: 0;
-    padding: 0;  
+    padding: 0;
     box-sizing: inherit;
 }
 
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
-
-  
 }
 
- 
+//mixins
+@mixin h2-style {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: $font-width-regular;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
 
+@mixin diagonal-before {
+    content: "";
+    background: $color-secondary;
+    z-index: -1;
+    position: absolute;
+}
 
-
- 
+@mixin pill {
+    background: rgba($color-white, 0.5);
+    box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.25), -20px -20px 60px rgba(255, 255, 255, 0.25);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
