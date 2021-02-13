@@ -47,7 +47,7 @@ html {
 
 @mixin pill {
     background: rgba($color-white, 0.5);
-    box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.25), -20px -20px 60px rgba(255, 255, 255, 0.25);
+    box-shadow: 20px 20px 30px rgba(190, 190, 190, 0.25), -20px -20px 60px rgba($color-white, 0.25);
     border-radius: 13px;
     display: flex;
     flex-direction: column;
