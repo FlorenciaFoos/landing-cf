@@ -32,7 +32,6 @@ html {
 //mixins
 @mixin h2-style {
     font-size: 3rem;
-    text-align: center;
     font-weight: $font-width-regular;
     text-transform: uppercase;
     margin-bottom: 3rem;
@@ -47,7 +46,7 @@ html {
 
 @mixin pill {
     background: rgba($color-white, 0.5);
-    box-shadow: 20px 20px 30px rgba(190, 190, 190, 0.25), -20px -20px 60px rgba($color-white, 0.25);
+    box-shadow: 20px 20px 30px rgba(190, 190, 190, 0.25), -20px -20px 60px rgba($color-white, 0.08);
     border-radius: 13px;
     display: flex;
     flex-direction: column;
