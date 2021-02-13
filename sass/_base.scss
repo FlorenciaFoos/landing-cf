@@ -6,9 +6,6 @@ $color-grey: #F5F5F5;
 $color-blue-details: #5D63F6;
 $color-white:#fff;
 $color-black: #000;
-$color-small-circle: #FFA8A8;
-$color-medium-circle: #FFC9C9;
-$color-big-circle: #FFE3E3;
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 $font-family-text:'Open Sans',
@@ -26,7 +23,7 @@ $font-width-bold: 700;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+    font-size: 62.5%;
 }
 
 //mixins
