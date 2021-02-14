@@ -15,6 +15,8 @@ html {
     box-shadow: 0 0 0 0 #FF6B6B; } }
 
 .header {
+  position: relative;
+  background: linear-gradient(180deg, #FF6B6B 90%, #fff 10%);
   grid-row: 1 / 2;
   display: flex;
   flex-direction: column;
@@ -36,15 +38,6 @@ html {
       font-size: 4.5rem;
       font-weight: 700;
       color: #fff; }
-  .header::before {
-    content: "";
-    position: absolute;
-    top: -86%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #FF6B6B;
-    z-index: -3; }
   .header__highlight {
     transition: all .5s;
     background: rgba(255, 255, 255, 0.5);
@@ -56,11 +49,13 @@ html {
     position: absolute;
     top: 87vh;
     right: 56vw;
+    z-index: 2;
     padding: 1rem 2rem 1rem 2rem; }
     .header__highlight:hover, .header__highlight:focus {
       box-shadow: inset 0 -8.25em 0 0 #0073dc;
       color: white; }
   .header__card {
+    z-index: 1;
     background: no-repeat bottom url(../img/regalos.png), linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
     display: flex;
     flex-direction: column;
@@ -72,8 +67,9 @@ html {
 
 .card__circle--small {
   width: 33vw;
-  z-index: -1;
-  position: absolute; }
+  z-index: 0;
+  position: absolute;
+  top: 40vh; }
 
 .card__image {
   width: 35.5rem;
