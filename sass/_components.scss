@@ -1,6 +1,9 @@
         //componentes reutilizables
         .header {
-            //position: relative;
+          position: relative;
+          background: linear-gradient(
+            180deg
+            , $color-secondary 90%, $color-white 10%);
             grid-row: 1 / 2;
             display: flex;
             flex-direction: column;
@@ -26,24 +29,17 @@
                     color: $color-white;
                 }
             }
-            &::before {
-                content: "";
-                position: absolute;
-                top: -86%;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                background: $color-secondary;
-                z-index: -3;
-            }
+          
             &__highlight {
                 @include pill;
                 position: absolute;
                 top: 87vh;
                 right: 56vw;
+                z-index: 2;
                 padding: 1rem 2rem 1rem 2rem;
             }
             &__card {
+                z-index: 1;
                 background: no-repeat bottom url(../img/regalos.png), linear-gradient(rgba($color-white, 0.9), rgba($color-white, 0.9));
                 display: flex;
                 flex-direction: column;
@@ -54,13 +50,14 @@
                 border-radius: 30px;
             }
         }
-        
+      
         .card {
             &__circle {
                 &--small {
                     width: 33vw;
-                    z-index: -1;
+                    z-index: 0;
                     position: absolute;
+                    top: 40vh;
                 }
             }
             &__image {
