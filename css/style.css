@@ -10,6 +10,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #FF6B6B; } }
+
 .header {
   grid-row: 1 / 2;
   display: flex;
@@ -42,6 +46,7 @@ html {
     background: #FF6B6B;
     z-index: -3; }
   .header__highlight {
+    transition: all .5s;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 20px 20px 30px rgba(190, 190, 190, 0.25), -20px -20px 60px rgba(255, 255, 255, 0.08);
     border-radius: 13px;
@@ -52,6 +57,9 @@ html {
     top: 87vh;
     right: 56vw;
     padding: 1rem 2rem 1rem 2rem; }
+    .header__highlight:hover, .header__highlight:focus {
+      box-shadow: inset 0 -8.25em 0 0 #0073dc;
+      color: white; }
   .header__card {
     background: no-repeat bottom url(../img/regalos.png), linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
     display: flex;
@@ -63,16 +71,8 @@ html {
     border-radius: 30px; }
 
 .card__circle--small {
-  width: 360px;
-  height: 360px;
+  width: 33vw;
   z-index: -1;
-  position: absolute;
-  margin-top: 4rem; }
-
-.card__circle--big {
-  width: 437px;
-  height: 437px;
-  z-index: -2;
   position: absolute; }
 
 .card__image {
@@ -106,8 +106,11 @@ html {
   padding: 1rem 4.1rem 1rem 4.1rem;
   background: #FFFFFF;
   opacity: 0.6;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.38) 0px 3px 8px;
   border-radius: 30px; }
+  .card__button:hover, .card__button:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 5em rgba(255, 107, 107, 0); }
 
 .main {
   margin-top: 8.1rem;
@@ -151,6 +154,10 @@ html {
       width: 29.6rem;
       height: 0.9rem; }
 
+@media (max-width: 691px) {
+  .details__features {
+    flex-direction: column; } }
+
 .feature {
   display: flex;
   flex-direction: column;
@@ -161,11 +168,13 @@ html {
     width: 6.25rem;
     height: 6.25rem; }
     .feature__icon:hover {
-      filter: invert(40%) sepia(75%) saturate(3023%) hue-rotate(223deg) brightness(95%) contrast(102%); }
+      filter: invert(40%) sepia(75%) saturate(3023%) hue-rotate(223deg) brightness(95%) contrast(102%);
+      transform: scale(1.4); }
     .feature__icon--size {
       width: 8.25rem;
       height: 6.25rem; }
       .feature__icon--size:hover {
+        transform: scale(1.4);
         filter: invert(40%) sepia(75%) saturate(3023%) hue-rotate(223deg) brightness(95%) contrast(102%); }
   .feature__title {
     font-size: 1.75rem; }
@@ -188,12 +197,16 @@ html {
     height: 49.3rem;
     margin-top: 12rem; }
   .preview__highlight {
+    transition: all .5s;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 20px 20px 30px rgba(190, 190, 190, 0.25), -20px -20px 60px rgba(255, 255, 255, 0.08);
     border-radius: 13px;
     display: flex;
     flex-direction: column;
     padding: 1.5rem; }
+    .preview__highlight:hover, .preview__highlight:focus {
+      box-shadow: inset 0 -8.25em 0 0 #0073dc;
+      color: white; }
 
 .highlight__title {
   font-size: 1.5rem;
@@ -270,12 +283,16 @@ html {
     .team__secondary img {
       width: 64%; }
   .team__member {
+    transition: all .5s;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 20px 20px 30px rgba(190, 190, 190, 0.25), -20px -20px 60px rgba(255, 255, 255, 0.08);
     border-radius: 13px;
     display: flex;
     flex-direction: column;
     padding: 1.5rem; }
+    .team__member:hover, .team__member:focus {
+      box-shadow: inset 0 -8.25em 0 0 #0073dc;
+      color: white; }
 
 .member-order--1 {
   grid-row: 2;
@@ -335,6 +352,9 @@ html {
   grid-row: 1 / -1;
   grid-column: 1 / -1;
   z-index: -4; }
+
+.secondary:hover {
+  transform: scale(1.2) rotateZ(calc(11 * 1deg)); }
 
 .container {
   display: grid;

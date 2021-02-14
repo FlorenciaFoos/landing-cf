@@ -1,6 +1,6 @@
         //componentes reutilizables
         .header {
-            // position: relative;
+            //position: relative;
             grid-row: 1 / 2;
             display: flex;
             flex-direction: column;
@@ -58,16 +58,8 @@
         .card {
             &__circle {
                 &--small {
-                    width: 360px;
-                    height: 360px;
+                    width: 33vw;
                     z-index: -1;
-                    position: absolute;
-                    margin-top: 4rem;
-                }
-                &--big {
-                    width: 437px;
-                    height: 437px;
-                    z-index: -2;
                     position: absolute;
                 }
             }
@@ -103,8 +95,14 @@
                 padding: 1rem 4.1rem 1rem 4.1rem;
                 background: #FFFFFF;
                 opacity: 0.6;
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                box-shadow: rgba(0, 0, 0, 0.38) 0px 3px 8px;
                 border-radius: 30px;
+                //animacion boton CTA
+                &:hover,
+                &:focus {
+                    animation: pulse 1s;
+                    box-shadow: 0 0 0 5em rgba($color-secondary, 0);
+                }
             }
         }
         
@@ -153,6 +151,12 @@
             }
         }
         
+        @media (max-width: 691px) {
+            .details__features {
+                flex-direction: column;
+            }
+        }
+        
         .feature {
             display: flex;
             flex-direction: column;
@@ -165,12 +169,14 @@
                 //agrego filtros para el hover sobre iconos
                 &:hover {
                     filter: invert(40%) sepia(75%) saturate(3023%) hue-rotate(223deg) brightness(95%) contrast(102%);
+                    transform: scale(1.4);
                 }
                 &--size {
                     width: 8.25rem;
                     height: 6.25rem;
                     //agrego filtros para el hover sobre iconos
                     &:hover {
+                        transform: scale(1.4);
                         filter: invert(40%) sepia(75%) saturate(3023%) hue-rotate(223deg) brightness(95%) contrast(102%);
                     }
                 }
@@ -355,11 +361,18 @@
             width: 65%;
         }
         
-        //fondo poligonal 
+        //fondo poligonal para grilla profesores
         .background-clip {
             clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
             background-color: $color-grey;
             grid-row: 1 / -1;
             grid-column: 1 / -1;
             z-index: -4;
+        }
+        
+        //animacion para section profesores (segundo grupo)
+        .secondary {
+            &:hover {
+                transform: scale(1.2) rotateZ(calc(11 * 1deg));
+            }
         }
