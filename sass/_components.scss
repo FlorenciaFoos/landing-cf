@@ -294,8 +294,14 @@
             &__member {
                 @include pill;
             }
+            
         }
         
+        @media (max-width: 691px) {
+            .team {
+                margin-top:48rem;
+            }
+        }
         //order en grilla section equipo
         .member-order--1 {
             grid-row: 2;
