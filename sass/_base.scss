@@ -42,10 +42,24 @@ html {
 }
 
 @mixin pill {
+    transition: all .5s;
     background: rgba($color-white, 0.5);
     box-shadow: 20px 20px 30px rgba(190, 190, 190, 0.25), -20px -20px 60px rgba($color-white, 0.08);
     border-radius: 13px;
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
+    //animacion para pastillas de texto
+    &:hover,
+    &:focus {
+        box-shadow: inset 0 -8.25em 0 0 #0073dc;
+        color: white;
+    }
+}
+
+//animacion para boton CTA
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 $color-secondary;
+    }
 }

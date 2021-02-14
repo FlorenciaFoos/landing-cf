@@ -39,30 +39,7 @@
     <path id="Trazado_1" data-name="Trazado 1" d="M78.834-1187.484c-2.145,4.877-4.755,10.814-5.8,13.2s-1.906,4.335-1.919,4.348-1.99.161-4.406.336l-9.774.7c-2.965.22-7.022.51-9.012.652s-3.779.278-3.973.3l-.349.039.317.3,4.419,3.947,6.564,5.846c8.185,7.3,10.078,8.986,10.155,9.044.11.084.478-1.473-3.5,14.632-1.654,6.693-3,12.19-2.991,12.21s5.614-3.224,12.455-7.216,12.475-7.248,12.533-7.235,2.571,1.563,5.588,3.437,7.526,4.677,10.013,6.221,5.239,3.256,6.118,3.8,1.609.995,1.634.995.026-.11,0-.245c-.039-.22-2.655-12.255-5.013-23.05-.562-2.6-1.027-4.768-1.027-4.826,0-.084,4.193-3.637,19.361-16.422,1.667-1.4,1.686-1.421,1.486-1.467-.116-.026-6.531-.672-14.258-1.441s-14.109-1.421-14.187-1.454a16.167,16.167,0,0,1-1.286-2.881c-.633-1.563-2.662-6.544-4.5-11.073s-3.644-8.967-4.005-9.852-.672-1.635-.7-1.667S80.979-1192.361,78.834-1187.484Z" transform="translate(-43.6 1196.302)" fill="#5d63f6"/>
   </g>
 </symbol>
-<symbol id="circle-big" width="437" height="437" viewBox="0 0 437 437">
- <path id="Ellipse_1" data-name="Ellipse 1" d="M218.5,0C339.174,0,437,97.826,437,218.5S339.174,437,218.5,437,0,339.174,0,218.5,97.826,0,218.5,0Z" fill="#ffe3e3"/>
-</symbol>
-<symbol id="circle-medium" width="360" height="360" viewBox="0 0 360 360">
- <path id="Ellipse_2" data-name="Ellipse 2" d="M180,0A180,180,0,1,1,0,180,180,180,0,0,1,180,0Z" fill="#ffc9c9"/>
-</symbol>
-<symbol id="circle-small" width="358" height="358" viewBox="0 0 358 358">
-<path id="Ellipse_3" data-name="Ellipse 3" d="M179,0A179,179,0,1,1,0,179,179,179,0,0,1,179,0Z" fill="#ffa8a8"/>
-</symbol>
-
-<symbol id="three-circles" width="336" height="336" viewBox="0 0 336 336">
- <g id="Grupo_1" data-name="Grupo 1" transform="translate(-128 -318)">
-    <path id="Ellipse_1" data-name="Ellipse 1" d="M168,0A168,168,0,1,1,0,168,168,168,0,0,1,168,0Z" transform="translate(128 318)" fill="#ffe3e3"/>
-    <path id="Ellipse_2" data-name="Ellipse 2" d="M136.218,0A136.218,136.218,0,1,1,0,136.218,136.218,136.218,0,0,1,136.218,0Z" transform="translate(160 350)" fill="#ffc9c9"/>
-    <path id="Ellipse_3" data-name="Ellipse 3" d="M105.735,0A105.735,105.735,0,1,1,0,105.735,105.735,105.735,0,0,1,105.735,0Z" transform="translate(190 380)" fill="#ffa8a8"/>
-  </g>
-</symbol>
-<symbol id="three-circles-small" width="286" height="286" viewBox="0 0 286 286">
- <g id="Grupo_2" data-name="Grupo 2" transform="translate(-519 -509)">
-    <path id="Ellipse_1" data-name="Ellipse 1" d="M143,0A143,143,0,1,1,0,143,143,143,0,0,1,143,0Z" transform="translate(519 509)" fill="#ffe3e3"/>
-    <path id="Ellipse_2" data-name="Ellipse 2" d="M114.278,0A114.278,114.278,0,1,1,0,114.278,114.278,114.278,0,0,1,114.278,0Z" transform="translate(548 538)" fill="#ffc9c9"/>
-    <path id="Ellipse_3" data-name="Ellipse 3" d="M86.9,0A86.9,86.9,0,1,1,0,86.9,86.9,86.9,0,0,1,86.9,0Z" transform="translate(575 565)" fill="#ffa8a8"/>
-  </g>
-</symbol>
+ 
 </defs>
 </svg>
 
