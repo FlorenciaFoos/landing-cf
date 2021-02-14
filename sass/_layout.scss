@@ -1,7 +1,7 @@
 // container y sistema de grilla 
 .container {
     display: grid;
-    grid-template-rows: 73.25rem 207.93rem; //2 rows HEADER MAIN
+    grid-template-rows: 1fr 3fr; //2 rows HEADER MAIN
     grid-template-columns: 1fr;
     font-family: $font-family-text;
     font-weight: 400;
